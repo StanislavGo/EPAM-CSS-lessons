@@ -1,0 +1,48 @@
+body {
+    padding: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    padding: 15px;
+    border: 5px solid dodgerblue;
+    border-radius: 3px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #303030;
+}
+
+p {
+    font-size: 18px;
+}
+
+*.quote {
+    color: darkslategrey;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#main-image {
+    border: 5px solid slateblue
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+a {
+    color: dodgerblue;
+}
+
+a:visited {
+    color: violet;
+}
+
+a:hover {
+    color: mediumseagreen;
+}
