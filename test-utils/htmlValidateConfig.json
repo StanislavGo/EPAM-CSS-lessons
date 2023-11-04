@@ -1,0 +1,8 @@
+{
+    "extends": ["html-validate:recommended"],
+    "rules": {
+        "missing-doctype": "error",
+        "no-trailing-whitespace": "off",
+        "no-inline-style": "off"
+    }
+}
