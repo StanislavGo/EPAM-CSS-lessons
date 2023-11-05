@@ -1,0 +1,59 @@
+body {
+    box-sizing: border-box
+}
+
+main {
+    float: left;
+    width: 70%;
+}
+
+aside {
+    height: 150vh;
+    float: right;
+    width: 30%;
+    position: relative;
+}
+
+header {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+}
+
+.info {
+    height: 460px;
+    overflow: auto;
+}
+
+form {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.header_line {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.client_stories {
+    margin: var(--space-size);
+    column-count: 3;
+    column-gap: 20px;
+}
+
+.features {
+    background: var(--primary-color);
+    padding-top: var(--space-size);
+    column-count: 2;
+    column-gap: 0;
+}
+
+h2 {
+    column-span: all;
+}

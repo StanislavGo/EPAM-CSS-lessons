@@ -1,0 +1,155 @@
+* {
+    font-family: source-sans-pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+.card {
+    padding: var(--space-size);
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Aside */
+aside > * {
+    padding: 0 var(--space-size);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+}
+
+input, textarea {
+    border-radius: 2px;
+    border-color: black;
+    border-width: 1px;
+}
+
+form .button {
+    margin-top: var(--space-size);
+    width: 120px;
+    align-self: center;
+}
+
+.info_pill {
+    text-align: center;
+    background: var(--secondary-color);
+    color: white;
+    padding: var(--space-size);
+    width: 150px;
+    margin: var(--space-size) auto 0;
+}
+
+/* Header */
+
+nav a {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header h1 {
+    color: var(--secondary-color);
+    font-size: 40px;
+}
+
+.logo {
+    width: 150px;
+}
+
+figure img {
+    width: 400px;
+}
+
+figcaption {
+    font-size: 10px;
+    text-align: right;
+}
+
+.header_line {
+    display: flex;
+    width: 100%;
+    background: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title_section {
+    display: flex;
+    margin-top: 87px;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+    background-color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: var(--space-size) calc(var(--space-size) * 2);
+}
+
+address {
+    font-style: normal;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 10px;
+    text-align: right;
+}
+
+.logo-sm {
+    height: 64px;
+}
+
+/* Common styles */
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+nav ul li {
+    padding: 0 var(--space-size);
+}
+
+.button {
+    background: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 32px;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.scaled {
+    transition: all .2s ease-in-out;
+}
+
+.scaled:hover {
+    transform: scale(1.1);
+}
