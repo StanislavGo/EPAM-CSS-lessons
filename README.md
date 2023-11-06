@@ -1,2 +1,2 @@
 # EPAM-CSS-lessons
-Here I will place all CSS tasks from Front-End course from EPAM (basic and advanced level)
+Here I will place all CSS tasks from EPAM Front-End course (basic and advanced level)
