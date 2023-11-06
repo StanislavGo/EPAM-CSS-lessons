@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+.block {
+    width: 200px;
+    height: 75px;
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+}
+
+@keyframes bgcolor {
+    from {
+        background-color: #ff5733;
+    }
+    to {
+        background-color: #3393ff;
+    }
+}
+
+@keyframes bgcolor2 {
+    0% {
+        background-color: #3393ff;
+    }
+    50% {
+        background-color: #33ff42;
+    }
+    100% {
+        background-color: #30b851;
+    }
+}
+
+@keyframes blockmove {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    25% {
+        left: 320px;
+        top: 0px;
+    }
+    50% {
+        left: 320px;
+        top: 320px;
+    }
+    75% {
+        left: 0px;
+        top: 320px;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+    }
+}
+
+@keyframes blockcolormove {
+    0% {
+        background-color: #33fffc;
+        top: 0px;
+        left: 0px;
+    }
+    50% {
+        background-color: #30b851;
+        left: 300px;
+        top: 300px;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        background-color: #33fffc;
+    }
+}
+
+@keyframes showhide {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes moveleft {
+    from {
+        left: 0;
+    }
+    to {
+        left: 300px;
+    }
+}
+
+.block1 {
+    background: #ff5733;
+    animation-name: bgcolor;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+.block2 {
+    background: #3393ff;
+    animation-name: bgcolor2;
+    animation-duration: 4s;
+}
+
+.block3 {
+    background: #33ff42;
+    animation-name: blockmove;
+    animation-duration: 6s;
+}
+
+.block4 {
+    background: #33fffc;
+    animation-name: blockcolormove;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+    animation-delay: 300ms;
+}
+
+.block5 {
+    background: #ff33f6;
+    animation-name: showhide;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+.block6 {
+    background: #30b851;
+    animation-name: blockmove;
+    animation-duration: 5s;
+    animation-direction: reverse;
+}
+
+.block7 {
+    background: #303cb8;
+    animation-name: blockcolormove;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.block8 {
+    background: #ec467b;
+    animation-name: moveleft;
+    animation-duration: 5s;
+}
+
+.block9 {
+    background: #e2ec46;
+    animation-name: moveleft;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+.block10 {
+    background: #ff1737;
+    animation-name: moveleft;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
