@@ -1,66 +1,45 @@
 @import 'mobile.css';
 
-@media screen and (min-width: 535px) {
+@media screen and (min-width: 1024px) {
+  :root {
+    --basic-background-image: linear-gradient(to right, #2a0845, #6441A5);
+    --basic-background-color: #6441A5;
+  }
+
   header {
-    display: flex;
     justify-content: space-between;
     align-items: center;
+    display: flex
   }
 
-  header ul { 
-      display: flex;
+  header ul {
+    display: flex;
   }
-
 
   header a {
-      border-top: none;
+    border-top: none;
   }
 
-
-  .sidebar {
-      margin-top: 0;
-  }
-}
-
-@media screen and (min-width: 730px) {
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: flex-start;
-    margin-bottom: 1rem;
+  body {
+    margin: 0;
   }
 
-  .cards li {
-      width: calc(50% - 0.5rem);
-      margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 1010px) {
-  .cards li {
-    width: calc(33% - 0.5rem);
-  }
-}
-
-@media screen and (min-width: 1295px) {
   main {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 1rem;
-  }
-
-  .cards li {
-      width: calc(32% - 0.5rem);
   }
 
   article p {
-      padding-right: 1rem;
+    padding-right: 1rem;
   }
-}
 
-@media (hover: hover) and (pointer: fine) {
-  .cards li:hover {
-      color: #6441A5;
+  .cards {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .cards li {
+    margin-bottom: 0px;
+    width: 31%;
   }
 }
