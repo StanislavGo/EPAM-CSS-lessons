@@ -1,23 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US" dir="ltr">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <title>CSS Layouts</title>
+    <title>Responsive Design Intro</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body>      
-      <main>
-        <div class="block block1"></div>
-        <div class="block block2"></div>
-        <div class="block block3"></div>
-        <div class="block block4"></div>
-        <div class="block block5"></div>
-        <div class="block block6"></div>
-        <div class="block block7"></div>
-        <div class="block block8"></div>
-        <div class="block block9"></div>
-        <div class="block block10"></div>
-      </main>
+
+  <body>
+    <header>
+      <div class="title">My Website</div>
+      <nav>
+        <ul>
+          <li>
+            <a href="">Link 1</a>
+          </li>
+          <li>
+            <a href="">Link 2</a>
+          </li>
+          <li>
+            <a href="">Link 3</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main>
+      <article>
+        <h1>This is the main heading</h1>
+        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+
+        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+
+        <ul class="cards">
+          <li>
+            <h2>Card One</h2>
+            <div class="inner">
+              <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado.</p>
+            </div>
+          </li>
+          <li>
+            <h2>Card Two</h2>
+            <div class="inner">
+              <p>Daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko.</p>
+            </div>
+          </li>
+          <li>
+            <h2>Card Three</h2>
+            <div class="inner">
+              <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
+            </div>
+          </li>
+          <li>
+            <h2>Card Four</h2>
+            <div class="inner">
+              <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
+            </div>
+          </li>
+          <li>
+            <h2>Card Five</h2>
+            <div class="inner">
+              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+            </div>
+          </li>
+
+        </ul>
+
+        <section class="cool-space-rocket">
+          <h3>Cool Space Rocket</h3>
+
+          <img src="images/rocket1280.jpg" srcset="images/rocket640.jpg 640w, images/rocket1024.jpg 1024w, images/rocket1280.jpg 1280w"
+          sizes="(max-width: 530px) 80vw,
+                 (max-width: 730px) 70vw,
+                 (max-width: 1500px) 50vw,
+                 1000px"
+          alt="Cool Space Rocket" alt="Two SpaceX rockets lands to the Earth">
+        </section>
+
+        <section class="space-building">
+          <h3>Space Building in Bulgaria</h3>
+
+          <picture>
+            <source srcset="images/space-building.webp" type="image/webp">
+            <img src="images/space-building.jpg" alt="Communist UFO spaceship monument in the middle of nowhere in Bulgaria.">
+          </picture>
+        </section>
+
+      </article>
+      <aside class="sidebar">
+        <p>Have you discovered all of the other excellent content on this website?</p>
+
+        <section class="nasa-astronaut">
+          <h3>NASA Astronaut</h3>
+
+          <picture>
+            <source media="(max-width:900px)" srcset="images/astronaut-crop2.jpg">
+            <source media="(max-width:1400px)" srcset="images/astronaut-crop1.jpg">
+            <img src="images/astronaut.jpg" alt="NASA Astronaut flying in Space in front of Earth">
+          </picture>
+        </section>
+      </aside>
+    </main>
   </body>
+
 </html>

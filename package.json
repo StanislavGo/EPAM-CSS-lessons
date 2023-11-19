@@ -1,5 +1,5 @@
 {
-  "name": "task-name",
+  "name": "media-queries-and-advanced-responsive-design",
   "version": "1.0.0",
   "description": "",
   "main": "",
@@ -16,7 +16,6 @@
   "license": "ISC",
   "devDependencies": {
     "@types/jsdom": "^16.2.14",
-    "base-64": "^1.0.0",
     "hex-rgb": "^5.0.0",
     "html-validate": "^6.10.0",
     "jest": "^28.0.2",

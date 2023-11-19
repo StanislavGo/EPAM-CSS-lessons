@@ -1,95 +1,66 @@
+@import 'mobile.css';
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #f3f3f3;
+@media screen and (min-width: 535px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header ul { 
+      display: flex;
+  }
+
+
+  header a {
+      border-top: none;
+  }
+
+
+  .sidebar {
+      margin-top: 0;
+  }
 }
 
-.block {
-    width: 200px;
-    height: 75px;
-    border-radius: 10px;
-    margin: 20px;
+@media screen and (min-width: 730px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
+
+  .cards li {
+      width: calc(50% - 0.5rem);
+      margin-bottom: 0;
+  }
 }
 
-.block1 {
-    background: #ff5733;
-    transform: skewY(30deg);
+@media screen and (min-width: 1010px) {
+  .cards li {
+    width: calc(33% - 0.5rem);
+  }
 }
 
-.block2 {
-    background: #3393ff;
-    transform: rotate(45deg);
+@media screen and (min-width: 1295px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1rem;
+  }
+
+  .cards li {
+      width: calc(32% - 0.5rem);
+  }
+
+  article p {
+      padding-right: 1rem;
+  }
 }
 
-.block3 {
-    background: #33ff42;
-    transform: scaleX(1.5);
-}
-
-.block4 {
-    background: #33fffc;
-    transition: all 2s
-}
-.block4:hover {
-    transform: scale(2);
-}
-
-.block5 {
-    background: #ff33f6;
-    transition: all 300ms;
-}
-
-.block5:hover {
-    transform: translateX(40px);
-}
-
-.block6 {
-    transform: rotate(90deg);
-    background-color: #ff0000;
-    transition: all 3s;
-    transition-delay: 200ms;
-}
-
-.block6:hover {
-    transform: rotate(-90deg);
-}
-
-.block7 {
-    background: #303cb8;
-    transition: all 3s ease-in-out;
-}
-
-.block7:hover {
-    transform: translateX(100px);
-}
-
-.block8 {
-    background: #ec467b;
-    transition: all 5s ease-out;
-}
-
-.block8:hover {
-    transform: rotate(-1090deg);
-}
-
-.block9 {
-    background: #e2ec46;
-    transition: all 2s;
-    transform-origin: left top;
-}
-
-.block9:hover {
-    transform: rotate(-500deg);
-}
-
-.block10 {
-    background: #ff1737;
-    transition: all 5s;
-    transform-origin: right bottom;
-    transition-delay: 300ms;
-}
-
-.block10:hover {
-    transform: rotate(460deg);
+@media (hover: hover) and (pointer: fine) {
+  .cards li:hover {
+      color: #6441A5;
+  }
 }
